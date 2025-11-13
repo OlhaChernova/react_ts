@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import GlobalStyles from "styles/GlobalStyles";
+
+// Импорты лекций
+// import Lesson06 from "./lessons/Lesson06/Lesson06";
+// import Lesson07 from "lessons/Lesson07/Lesson07";
+// import Lesson08 from "lessons/Lesson08/Lesson08";
+// import Lesson09 from "lessons/Lesson09/Lesson09";
+// import Lesson10 from "lessons/Lesson10/Lesson10";
+
+// Импорты домашних работ
+// import Homework07 from "homeworks/Homework07/Homework07";
+// import Homework09 from "homeworks/Homework09/Homework09";
+import Homework10 from "homeworks/Homework10/Homework10";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <GlobalStyles />
+      {/* Лекция 6 - TypeScript */}
+      {/* <Lesson06 /> */}
+
+      {/* Лекция 7 - TypeScript: object types */}
+      {/* <Lesson07 /> */}
+      {/* <Homework07/> */}
+
+      {/* Лекция 8 - Styling components */}
+      {/* <Lesson08 /> */}
+
+      {/* Лекция 9 - Styling components, control components */}
+      {/* <Lesson09 /> */}
+      {/* <Homework09 /> */}
+
+      {/* Лекция 10 - useEffect */}
+      {/* <Lesson10 /> */}
+      <Homework10 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
