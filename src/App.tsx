@@ -1,11 +1,18 @@
 import GlobalStyles from "styles/GlobalStyles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 import Layout from "components/Layout/Layout";
 import Home from "pages/Home/Home";
 import About from "pages/About/About";
 import Users from "pages/Users/Users";
 import User from "pages/Users/components/User/User";
+import Clients from "pages/Clients/Clients";
+import Adidas from "pages/Clients/components/Adidas/Adidas";
+import Nike from "pages/Clients/components/Nike/Nike";
+import Puma from "pages/Clients/components/Puma/Puma";
+ 
+
 
 // Импорты лекций
 // import Lesson06 from "./lessons/Lesson06/Lesson06";
@@ -33,6 +40,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
           <Route path="/users/user" element={<User />} />
+          <Route path="/client" element={<Clients />} />
+          <Route path="/client/adidas" element={<Adidas />} />
+          <Route path="/client/nike" element={<Nike />} />
+          <Route path="/client/puma" element={<Puma />} />
         </Routes>
       </Layout>
 
