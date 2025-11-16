@@ -1,5 +1,11 @@
-
 import GlobalStyles from "styles/GlobalStyles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Layout from "components/Layout/Layout";
+import Home from "pages/Home/Home";
+import About from "pages/About/About";
+import Users from "pages/Users/Users";
+import User from "pages/Users/components/User/User";
 
 // Импорты лекций
 // import Lesson06 from "./lessons/Lesson06/Lesson06";
@@ -13,12 +19,23 @@ import GlobalStyles from "styles/GlobalStyles";
 // import Homework07 from "homeworks/Homework07/Homework07";
 // import Homework09 from "homeworks/Homework09/Homework09";
 // import Homework10 from "homeworks/Homework10/Homework10";
-import Homework12 from "homeworks/Homework12/Homework12";
+// import Homework12 from "homeworks/Homework12/Homework12";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyles />
+      <Layout>
+        {/* Routes - собирает все маршруты приложение */}
+        <Routes>
+            {/* Route - компонент, в который передаётся маршрут и контент */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/users/user" element={<User />} />
+        </Routes>
+      </Layout>
+
       {/* Лекция 6 - TypeScript */}
       {/* <Lesson06 /> */}
 
@@ -37,10 +54,12 @@ function App() {
       {/* <Lesson10 /> */}
       {/* <Homework10 /> */}
 
-       {/* Лекция 12 - Formik */}
+      {/* Лекция 12 - Formik */}
       {/* <Lesson12 /> */}
-      <Homework12/>
-    </>
+      {/* <Homework12/> */}
+
+      {/* Лекция 13 - Routing */}
+    </BrowserRouter>
   );
 }
 
