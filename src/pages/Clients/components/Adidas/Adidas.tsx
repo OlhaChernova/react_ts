@@ -1,4 +1,4 @@
-import { AdidasPage, AdidasInfo, Info, Title } from "./styles";
+import { AdidasPage, AdidasInfo, Info, Title, Li } from "./styles";
 
 function Adidas() {
   return (
@@ -6,11 +6,11 @@ function Adidas() {
       <AdidasInfo>
         <Title>Adidas</Title>
         <Info>
-        <li>Основание: 1948, Германия </li>
-        <li>Основатель: Рудольф Дасслер</li>
-        <li>Специализация:Обувь, одежда и спортивные товары</li>
-        <li>Фокус на футболе и лайфстайл-коллаборациях</li>
-        </Info>
+        <Li>Основание: 1948, Германия </Li>
+        <Li>Основатель: Рудольф Дасслер</Li>
+        <Li>Специализация:Обувь, одежда и спортивные товары</Li>
+        <Li>Фокус на футболе и лайфстайл-коллаборациях</Li>
+      </Info>
       </AdidasInfo>
     </AdidasPage>
   );

@@ -1,4 +1,4 @@
-import { Info, PumaInfo, PumaPage, Title, } from "./styles";
+import { Info, Li, PumaInfo, PumaPage, Title, } from "./styles";
 
 function Nike() {
   return (
@@ -6,13 +6,13 @@ function Nike() {
       <PumaInfo>
         <Title>Puma</Title>
         <Info>
-          <li>Основание: 1964, США </li>
-          <li>Основатель: Фил Найт, Билл Бауэрман</li>
-          <li>Специализация:Спортивная обувь, одежда и аксессуары</li>
-          <li>
+          <Li>Основание: 1964, США </Li>
+          <Li>Основатель: Фил Найт, Билл Бауэрман</Li>
+          <Li>Специализация:Спортивная обувь, одежда и аксессуары</Li>
+          <Li>
             Особенности бренда: Логотип Swoosh, технологии Air, сильный
             маркетинг
-          </li>
+          </Li>
         </Info>
       </PumaInfo>
     </PumaPage>

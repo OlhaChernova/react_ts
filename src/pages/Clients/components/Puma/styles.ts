@@ -6,19 +6,27 @@ export const PumaPage = styled.div`
   flex-direction: column;
   background-color: #e7b6dcff;
 `;
+
 export const PumaInfo = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
 `;
+
 export const Title = styled.h1`
   font-size: 36px;
   color: #2b291eff;
   padding: 40px 0 20px;
 `;
+
 export const Info = styled.ul`
-  font-size: 28px;
-  padding-left: 40px;
-  font-size: 24;
-  color: #2f280aff;
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+`;
+
+export const Li = styled.li`
+  font-size:24px;
+  color: #333;
+  margin-bottom: 6px;
 `;
