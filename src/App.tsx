@@ -1,18 +1,9 @@
 import GlobalStyles from "styles/GlobalStyles";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Layout from "components/Layout/Layout";
-import Home from "pages/Home/Home";
-import About from "pages/About/About";
-import Users from "pages/Users/Users";
-import User from "pages/Users/components/User/User";
-import Clients from "pages/Clients/Clients";
-import Adidas from "pages/Clients/components/Adidas/Adidas";
-import Nike from "pages/Clients/components/Nike/Nike";
-import Puma from "pages/Clients/components/Puma/Puma";
- 
-
+import { routesData } from "routes/routes";
+import type { RoutePage } from "routes/types";
 
 // Импорты лекций
 // import Lesson06 from "./lessons/Lesson06/Lesson06";
@@ -29,22 +20,16 @@ import Puma from "pages/Clients/components/Puma/Puma";
 // import Homework12 from "homeworks/Homework12/Homework12";
 
 function App() {
+  const routes = routesData.map(({ path, element }: RoutePage) => {
+    return <Route path={path} element={element} />;
+  });
+
   return (
     <BrowserRouter>
       <GlobalStyles />
       <Layout>
         {/* Routes - собирает все маршруты приложение */}
-        <Routes>
-            {/* Route - компонент, в который передаётся маршрут и контент */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/users/user" element={<User />} />
-          <Route path="/client" element={<Clients />} />
-          <Route path="/client/adidas" element={<Adidas />} />
-          <Route path="/client/nike" element={<Nike />} />
-          <Route path="/client/puma" element={<Puma />} />
-        </Routes>
+        <Routes>{routes}</Routes>
       </Layout>
 
       {/* Лекция 6 - TypeScript */}
