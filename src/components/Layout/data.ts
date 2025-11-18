@@ -6,4 +6,5 @@ export const navLinksData: NavLink[] = [
   { path: "/users", name: "Users" },
   { path: "/clients", name: "Clients" },
   { path: "/lesson14", name: "Lesson14" },
+  { path: "/homework14", name: "Homework14" },
 ];

@@ -4,7 +4,7 @@ export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 100%;
+  width: 550px;
 `;
 
 export const Label = styled.label`
@@ -24,7 +24,6 @@ export const InputElement = styled.input`
     color: #a5a5a5;
   }
 `;
-
 
 export const ErrorMessage = styled.div`
   height: 18px;
