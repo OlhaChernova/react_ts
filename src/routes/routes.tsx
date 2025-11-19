@@ -8,6 +8,7 @@ import User from "pages/Users/components/User/User";
 import Users from "pages/Users/Users";
 import About from "pages/About/About";
 import Lesson14 from "lessons/Lesson14/Lesson14";
+import Homework14 from "homeworks/Homework14/Homework14";
 
 
 export const routesData: RoutePage[] = [
@@ -20,5 +21,6 @@ export const routesData: RoutePage[] = [
   { path: "/clients/nike", element: <Nike /> },
   { path: "/clients/puma", element: <Puma /> },
   { path: "/lesson14", element: <Lesson14 /> },
+  { path: "/homework14", element: <Homework14 /> },
   { path: "*", element: "Page not found" },
 ];
